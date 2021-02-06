@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import AddProducto from "./components/add-producto.component";
+import ListaProductos from "./components/list-productos.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={{ margin: "20px", color: "blue"}}>
+        <h3>Lista de productos</h3>
+        <AddProducto />
+        
+        
+      </div>
     </div>
   );
 }
-
+//<ListaProductos />
 export default App;
